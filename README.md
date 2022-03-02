@@ -26,7 +26,7 @@ curl -F "data=@test.jpg" http://localhost:8080 -o result.png
 
 # Build from source:
 
-### Option 1 - Locally with virtualenv
+### Option 1 - Locally with virtualenv (Python 3.6.15)
 
 ```bash
 virtualenv venv
@@ -34,7 +34,7 @@ venv/bin/activate
 ```
 
 ```bash
-pip install torch==0.4.1
+pip install torch==0.4.1 -f https://download.pytorch.org/whl/torch_stable.html
 pip install -r requirements.txt
 ```
 
